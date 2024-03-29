@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout de Playlists</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <h1 class="playlist-title" onclick="togglePlaylist('playlist1')">ENCHEDORA</h1>
+    <div class="playlist" id="playlist1">
+        <div class="playlist-item">
+            <img src="img/enchedoras_Porta.jpg" alt="Imagem 1">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Formato.jpg" alt="Imagem 2">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Balanca.jpg" alt="Imagem 3">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Centrador.jpg" alt="Imagem 4">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_CopoDosador.jpg" alt="Imagem 5">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Sensores.jpg" alt="Imagem 6">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Mandril.jpg" alt="Imagem 7">
+        </div>
+        <div class="playlist-item">
+          <img src="img/enchedora_Pistao.jpg" alt="Imagem 8">
+        </div>
+        <div class="playlist-item">
+          <img src="img/enchedora_SisremadeRejeito.jpg" alt="Imagem 9">
+        </div>
+        <div class="playlist-item">
+          <img src="img/enchedora_Varetas.jpg" alt="Imagem 10">
+        </div>    
+    </div>
+    <h1 class="playlist-title" onclick="togglePlaylist('playlist2')">ENCHEDORA2</h1>
+    <div class="playlist" id="playlist2" style="display: none;">
+        <div class="playlist-item">
+          <img src="img/enchedoras_Porta.jpg" alt="Imagem 1">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Formato.jpg" alt="Imagem 2">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Balanca.jpg" alt="Imagem 3">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Centrador.jpg" alt="Imagem 4">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_CopoDosador.jpg" alt="Imagem 5">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Sensores.jpg" alt="Imagem 6">
+        </div>
+        <div class="playlist-item">
+            <img src="img/enchedoras_Mandril.jpg" alt="Imagem 7">
+        </div>
+        <div class="playlist-item">
+          <img src="img/enchedora_Pistao.jpg" alt="Imagem 8">
+        </div>
+        <div class="playlist-item">
+          <img src="img/enchedora_SisremadeRejeito.jpg" alt="Imagem 9">
+        </div>
+        <div class="playlist-item">
+          <img src="img/enchedora_Varetas.jpg" alt="Imagem 10">
+        </div>   
+</div>
+
+<script>
+function togglePlaylist(id) {
+    var playlist = document.getElementById(id);
+    var displayStyle = window.getComputedStyle(playlist).display;
+    
+    if (displayStyle === "none") {
+        playlist.style.display = "flex";
+    } else {
+        playlist.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

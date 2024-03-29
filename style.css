@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  overflow-x: hidden; /* Para evitar a barra de rolagem horizontal */
+}
+
+#container {
+  position: relative;
+  padding-top: 20px;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid gray; /* Adiciona uma linha fina cinza abaixo do título */
+  padding-bottom: 10px; /* Adiciona um pequeno espaço entre o texto e a linha */
+}
+
+.playlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 20px; /* Reduz a margem superior para compensar o espaço adicionado pelo título */
+  margin-left: 4px;
+}
+
+.playlist-item {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.playlist-item img {
+  width: 230px;
+  height: 140px;
+  border-radius: 10px;
+  transition: transform 0.10s;
+}
+
+.playlist-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Consulta de mídia para telas menores, como celulares */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .playlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .playlist-item {
+    margin: 5px; /* Reduz a margem entre os itens da playlist */
+  }
+
+  iframe {
+    max-width: 10%; /* Garante que os vídeos se ajustem ao contêiner */
+    height: auto; /* Garante que a altura seja ajustada proporcionalmente */
+  }
+}
