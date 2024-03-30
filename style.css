@@ -14,13 +14,14 @@ h1{
 
 .sidebar {
   width: 150px;
-  height: 100vh; /* Pra cobrir tda altura da tela */
+  height: 100vh; /* Para cobrir toda a altura da tela */
   background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3); 
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 
 .inicio-button {
