@@ -8,64 +8,71 @@
 </head>
 <body>
 
+    <!-- Barra lateral -->
     <div class="sidebar">
         <button class="inicio-button" onclick="window.location.href='index.html'">INÍCIO</button>
     </div>
 
-<div id="container">
-    <h1 class="playlist-title" onclick="togglePlaylist('playlist1')"><span class="bold">EQUIPAMENTOS</span> ENVASE</h1>
-    <div class="playlist" id="playlist1">
-        <div class="playlist-item">
-            <img src="img/envase_SistemasdeManobras.jpg" alt="Imagem 1">
-        </div>
-        <div class="playlist-item">
-            <img src="img/envase_Posimat.jpg" alt="Imagem 2">
-        </div>
-        <div class="playlist-item">
-            <img src="img/envase_EnchedoraSerac.jpg" alt="Imagem 3">
-        </div>
-        <div class="playlist-item">
-            <img src="img/envase_Waterfall.jpg" alt="Imagem 4">
-        </div>
-        <div class="playlist-item">
-            <img src="img/envase_Seladora.jpg" alt="Imagem 5">
-        </div>
-        <div class="playlist-item">
-            <img src="img/envase_Rotuladora.jpg" alt="Imagem 6">
-        </div>
-        <div class="playlist-item">
-            <img src="img/envase_TrackeTrace.jpg" alt="Imagem 7">
-        </div>
-        <div class="playlist-item">
-          <img src="img/envase_ETT.jpg" alt="Imagem 8">
-        </div>
-        <div class="playlist-item">
-          <img src="img/envase_3M.jpg" alt="Imagem 9">
-        </div>
-        <div class="playlist-item">
-          <img src="img/envase_CheckWeighter.jpg" alt="Imagem 10">
-        </div>
-        <div class="playlist-item">
-            <img src="img/envase_MagazinedePallet.jpg" alt="Imagem 10">
-          </div> 
-          <div class="playlist-item">
-            <img src="img/envase_RoboPalletizador.jpg" alt="Imagem 10">
-          </div> 
-    </div>  
-</div>
+    <!-- Cabeçalho -->
+    <div class="header">
+        <button class="inicio-button" onclick="window.location.href='index.html'">INÍCIO</button>
+    </div>
 
-<script>
-function togglePlaylist(id) {
-    var playlist = document.getElementById(id);
-    var displayStyle = window.getComputedStyle(playlist).display;
-    
-    if (displayStyle === "none") {
-        playlist.style.display = "flex";
-    } else {
-        playlist.style.display = "none";
+    <!-- Restante do conteúdo -->
+    <div id="container">
+        <h1 class="playlist-title" onclick="togglePlaylist('playlist1')"><span class="bold">EQUIPAMENTOS</span> ENVASE</h1>
+        <div class="playlist" id="playlist1">
+            <div class="playlist-item">
+                <img src="img/envase_SistemasdeManobras.jpg" alt="Imagem 1">
+            </div>
+            <div class="playlist-item">
+                <img src="img/envase_Posimat.jpg" alt="Imagem 2">
+            </div>
+            <div class="playlist-item">
+                <img src="img/envase_EnchedoraSerac.jpg" alt="Imagem 3">
+            </div>
+            <div class="playlist-item">
+                <img src="img/envase_Waterfall.jpg" alt="Imagem 4">
+            </div>
+            <div class="playlist-item">
+                <img src="img/envase_Seladora.jpg" alt="Imagem 5">
+            </div>
+            <div class="playlist-item">
+                <img src="img/envase_Rotuladora.jpg" alt="Imagem 6">
+            </div>
+            <div class="playlist-item">
+                <img src="img/envase_TrackeTrace.jpg" alt="Imagem 7">
+            </div>
+            <div class="playlist-item">
+              <img src="img/envase_ETT.jpg" alt="Imagem 8">
+            </div>
+            <div class="playlist-item">
+              <img src="img/envase_3M.jpg" alt="Imagem 9">
+            </div>
+            <div class="playlist-item">
+              <img src="img/envase_CheckWeighter.jpg" alt="Imagem 10">
+            </div>
+            <div class="playlist-item">
+                <img src="img/envase_MagazinedePallet.jpg" alt="Imagem 10">
+              </div> 
+              <div class="playlist-item">
+                <img src="img/envase_RoboPalletizador.jpg" alt="Imagem 10">
+              </div> 
+        </div>  
+    </div>
+
+    <script>
+    function togglePlaylist(id) {
+        var playlist = document.getElementById(id);
+        var displayStyle = window.getComputedStyle(playlist).display;
+        
+        if (displayStyle === "none") {
+            playlist.style.display = "flex";
+        } else {
+            playlist.style.display = "none";
+        }
     }
-}
-</script>
+    </script>
 
 </body>
 </html>

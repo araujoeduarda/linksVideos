@@ -108,3 +108,34 @@ h1{
       height: auto;
   }
 }
+/* CSS para telas menores que 700px */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    display: none; /* Esconde a barra lateral */
+  }
+
+  #container {
+    padding-top: 60px; /* Adiciona espaço para o cabeçalho */
+  }
+
+  .header {
+    background-color: whitesmoke; /* Cor de fundo do cabeçalho */
+    height: 60px; /* Altura do cabeçalho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3); /* Sombra do cabeçalho */
+  }
+
+  .inicio-button {
+    position: absolute; /* Posiciona o botão "Início" no canto superior esquerdo */
+    left: 10px;
+  }
+}
+
+/* CSS para telas maiores que 700px */
+@media screen and (min-width: 701px) {
+  .header {
+    display: none; /* Esconde o cabeçalho em telas maiores que 700px */
+  }
+}
