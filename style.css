@@ -2,30 +2,62 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: black;
-  overflow-x: hidden; /* Para evitar a barra de rolagem horizontal */
+  background-color: #F8F8F9;
+  overflow-x: hidden; /* Pra evitar sidescroll */
+  display: flex; 
+  
 }
 
+h1{
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 150px;
+  height: 100vh; /* Pra cobrir tda altura da tela */
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+.inicio-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); 
+}
+
+
 #container {
-  position: relative;
+  flex: 1; /* Ocupa o rest0o do espaco disponivel */
   padding-top: 20px;
 }
 
-h1 {
-  color: white;
+.playlist-title {
+  color: black;
   margin: 0;
   margin-left: 10px;
   margin-top: 10px;
-  border-bottom: 1px solid gray; /* Adiciona uma linha fina cinza abaixo do título */
-  padding-bottom: 10px; /* Adiciona um pequeno espaço entre o texto e a linha */
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #373839;
 }
 
 .playlist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  margin-top: 20px; /* Reduz a margem superior para compensar o espaço adicionado pelo título */
-  margin-left: 4px;
+  justify-content: left; 
+  margin-top: 20px;
+  margin-left: 7px;
 }
 
 .playlist-item {
@@ -38,30 +70,40 @@ h1 {
   height: 140px;
   border-radius: 10px;
   transition: transform 0.10s;
+  outline: 7px solid white; /*  moldura de 5px em volta */
+  outline-offset: -5px; /* Pra compensar o tamanho da moldura */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 17); 
 }
+
+
 
 .playlist-item img:hover {
   transform: scale(1.1);
 }
 
-/* Consulta de mídia para telas menores, como celulares */
+.bold {
+  font-weight: bolder;
+  color: black;
+}
+
+
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 24px; /* Reduz o tamanho da fonte do título */
+      font-size: 24px;
   }
 
   .playlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
 
   .playlist-item {
-    margin: 5px; /* Reduz a margem entre os itens da playlist */
+      margin: 5px;
   }
 
   iframe {
-    max-width: 10%; /* Garante que os vídeos se ajustem ao contêiner */
-    height: auto; /* Garante que a altura seja ajustada proporcionalmente */
+      max-width: 10%;
+      height: auto;
   }
 }

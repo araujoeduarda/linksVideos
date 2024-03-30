@@ -1,0 +1,30 @@
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('img/colaboradores.jpeg'); /* Caminho atualizado */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .buttons-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .button {
+        background-color: white;
+        color: #124E73;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold; 
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.9);
+        width: 180px;
+    }
